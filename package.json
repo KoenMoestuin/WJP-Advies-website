@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "support.js",
   "scripts": {
-    "deploy": "wrangler pages deploy . --project-name=wjp-advies-website",
+    "deploy": "wrangler deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
