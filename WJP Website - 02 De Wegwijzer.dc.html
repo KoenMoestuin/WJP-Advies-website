@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #FFFFFF; color: #0F2A3F; font-family: 'Manrope', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: #00B9F2; color: #fff; }
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 40px; }
+  .grotesk { font-family: 'Space Grotesk', sans-serif; }
+  .eyebrow { font: 700 12px 'Space Grotesk'; letter-spacing: .16em; text-transform: uppercase; color: #0089C4; }
+  .navlink { font: 600 15px 'Manrope'; color: #3c5566; transition: color .2s; }
+  .navlink:hover { color: #00B9F2; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 9px; font: 700 15px 'Manrope'; background: #00B9F2; color: #fff; padding: 13px 24px; border-radius: 10px; transition: transform .2s, background .2s, box-shadow .2s; box-shadow: 0 10px 24px -10px rgba(0,185,242,.6); }
+  .btn-primary:hover { transform: translateY(-2px); background: #00a6dc; box-shadow: 0 16px 30px -12px rgba(0,185,242,.7); }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 9px; font: 700 15px 'Manrope'; color: #0F2A3F; padding: 13px 22px; border-radius: 10px; border: 1.5px solid #CBDCE7; transition: border-color .2s, background .2s; }
+  .btn-ghost:hover { border-color: #00B9F2; background: #F1F9FD; }
+  .svc { transition: transform .25s, box-shadow .25s, border-color .25s; }
+  .svc:hover { transform: translateY(-5px); box-shadow: 0 26px 50px -30px rgba(15,42,63,.35); border-color: #00B9F2; }
+</style>
+</helmet>
+
+<div>
+  <!-- ============ NAV ============ -->
+  <header style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.86); backdrop-filter: blur(10px); border-bottom: 1px solid #E7EFF4;">
+    <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; height: 88px;">
+      <a href="#top" style="display: flex; align-items: center;">
+        <img src="assets/logo-navy.png?v=5" alt="WJP training, coaching &amp; advies" style="height: 48px; display: block;">
+      </a>
+      <nav style="display: flex; align-items: center; gap: 32px;">
+        <a class="navlink" href="#over">Over mij</a>
+        <a class="navlink" href="#unushuk">Inukshuk</a>
+        <a class="navlink" href="#diensten">Diensten</a>
+        <a class="btn-primary" href="#contact" style="padding: 11px 20px; font-size: 14px;">Plan een gesprek</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" style="padding: 80px 0 74px; background: linear-gradient(180deg, #F4FBFE 0%, #FFFFFF 100%);">
+    <div class="wrap" style="display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: center;">
+      <div>
+        <div style="display: inline-flex; align-items: center; gap: 9px; background: #E6F4FB; border-radius: 999px; padding: 7px 15px; margin-bottom: 26px;">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: #00B86A;"></span>
+          <span style="font: 700 13px 'Manrope'; color: #0089C4;">Beschikbaar voor opdrachten &amp; interim</span>
+        </div>
+        <h1 class="grotesk" style="font-weight: 700; font-size: 66px; line-height: 1.02; letter-spacing: -.03em; margin: 0 0 24px; color: #0F2A3F;">van <span style="color: #00B9F2; font-style: italic;">betekenis.</span></h1>
+        <p style="font-size: 20px; line-height: 1.6; color: #3c5566; max-width: 480px; margin: 0 0 34px;">Ik help mensen, teams en organisaties succesvol veranderen. Als adviseur, trainer en coach ondersteun ik bij vraagstukken rond samenwerking, leiderschap en talentontwikkeling.</p>
+        <div style="display: flex; gap: 13px; flex-wrap: wrap;">
+          <a class="btn-primary" href="#contact">Kom in contact <span>→</span></a>
+          <a class="btn-ghost" href="https://www.linkedin.com/in/william-polm-mmi-msc/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div style="position: absolute; inset: 18px -18px -18px 18px; border-radius: 24px; background: #00B9F2; z-index: 0;"></div>
+        <div style="position: relative; z-index: 1; border-radius: 24px; overflow: hidden; aspect-ratio: 5/6; box-shadow: 0 30px 60px -30px rgba(15,42,63,.4);">
+          <img src="assets/portrait.png" alt="William Polm" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="position: absolute; z-index: 2; left: 22px; bottom: 22px; background: #fff; border-radius: 14px; padding: 13px 18px; box-shadow: 0 14px 30px -14px rgba(15,42,63,.4);">
+          <div class="grotesk" style="font-weight: 700; font-size: 17px; color: #0F2A3F;">William Polm</div>
+          <div style="font: 600 13px 'Manrope'; color: #6b8091;">Adviseur · Trainer · Coach</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STAT / TAG STRIP ============ -->
+  <section style="border-top: 1px solid #E7EFF4; border-bottom: 1px solid #E7EFF4; background: #FBFDFE;">
+    <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 14px; padding: 22px 40px;">
+      <span style="font: 600 14px 'Manrope'; color: #4a6478; background: #EEF6FB; border-radius: 999px; padding: 8px 16px;">HR &amp; talent</span>
+      <span style="font: 600 14px 'Manrope'; color: #4a6478; background: #EEF6FB; border-radius: 999px; padding: 8px 16px;">Leiderschap</span>
+      <span style="font: 600 14px 'Manrope'; color: #4a6478; background: #EEF6FB; border-radius: 999px; padding: 8px 16px;">Samenwerking</span>
+      <span style="font: 600 14px 'Manrope'; color: #4a6478; background: #EEF6FB; border-radius: 999px; padding: 8px 16px;">Organisatie­ontwikkeling</span>
+      <span style="font: 600 14px 'Manrope'; color: #4a6478; background: #EEF6FB; border-radius: 999px; padding: 8px 16px;">Teamcoaching</span>
+      <span style="font: 600 14px 'Manrope'; color: #4a6478; background: #EEF6FB; border-radius: 999px; padding: 8px 16px;">Medezeggenschap</span>
+    </div>
+  </section>
+
+  <!-- ============ OVER MIJ ============ -->
+  <section id="over" style="padding: 88px 0;">
+    <div class="wrap" style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 18px;">Over mij</div>
+        <h2 class="grotesk" style="font-weight: 700; font-size: 42px; line-height: 1.06; letter-spacing: -.025em; margin: 0 0 24px;">Mensen en organisaties met elkaar verbinden.</h2>
+        <p style="font-size: 17.5px; line-height: 1.7; color: #3c5566; margin: 0 0 18px;">Door mijn ervaring binnen HR, coaching, accountmanagement en ondernemerschap weet ik mensen en organisaties met elkaar te verbinden en beweging te creëren.</p>
+        <p style="font-size: 17.5px; line-height: 1.7; color: #3c5566; margin: 0;">Ik werk altijd vanuit de strategische richting van de organisatie en ondersteun bij de vertaling van strategie naar concrete doelstellingen en gedrag.</p>
+      </div>
+      <div style="display: grid; gap: 16px;">
+        <div style="background: #F4FBFE; border: 1px solid #DBEDF6; border-radius: 16px; padding: 26px 28px;">
+          <div class="grotesk" style="font-weight: 700; font-size: 19px; color: #0089C4; margin-bottom: 6px;">Groei &amp; ontwikkeling</div>
+          <p style="font-size: 15.5px; line-height: 1.55; color: #4a6478; margin: 0;">De rode draad in mijn werk. Het geeft me energie om mensen en teams hun potentieel te laten benutten en zichtbaar verder te komen.</p>
+        </div>
+        <div style="background: #F4FBFE; border: 1px solid #DBEDF6; border-radius: 16px; padding: 26px 28px;">
+          <div class="grotesk" style="font-weight: 700; font-size: 19px; color: #0089C4; margin-bottom: 6px;">Teamcoach</div>
+          <p style="font-size: 15.5px; line-height: 1.55; color: #4a6478; margin: 0;">Als opgeleide teamcoach begeleid ik teams die effectiever willen samenwerken of samen een volgende stap willen zetten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INUKSHUK ============ -->
+  <section id="unushuk" style="padding: 80px 0; background: #0F2A3F; color: #EAF4FA;">
+    <div class="wrap">
+      <div style="display: grid; grid-template-columns: .82fr 1.18fr; background: #123249; border: 1px solid #24506b; border-radius: 24px; overflow: hidden;">
+        <!-- figure half -->
+        <div style="background: linear-gradient(160deg, #163a54, #0d2537); display: flex; align-items: center; justify-content: center; padding: 56px 40px; border-right: 1px solid #24506b;">
+          <img src="assets/inukshuk-figure.png" alt="Inukshuk — een stapeling van stenen" style="width: 100%; max-width: 200px; height: auto; display: block;">
+        </div>
+        <!-- text half -->
+        <div style="padding: 54px 52px;">
+          <div class="eyebrow" style="color: #4fd0ff; margin-bottom: 18px;">De Inukshuk · de wegwijzer</div>
+          <h2 class="grotesk" style="font-weight: 700; font-size: 32px; line-height: 1.14; letter-spacing: -.02em; margin: 0 0 20px;">Een stapeltje stenen dat je ondersteunt, onderweg naar de bestemming.</h2>
+          <p style="font-size: 16.5px; line-height: 1.7; color: #9fbccd; margin: 0 0 16px;">De wegwijzer voor wie ná jou komt. Ik kwam de Inukshuk tegen op studiereis door Canada met studenten, in het kader van de ESTD — een internationale conferentie voor learning &amp; development. Dat je van betekenis kunt zijn voor wie ná jou komt, past precies bij het gedachtegoed van HRM.</p>
+          <p style="font-size: 16.5px; line-height: 1.7; color: #9fbccd; margin: 0 0 22px;">De functie van de steenstapelingen varieert:</p>
+          <div style="display: grid; gap: 14px; margin-bottom: 30px;">
+            <div style="display: flex; gap: 13px; align-items: flex-start;">
+              <span style="flex: none; margin-top: 8px; width: 7px; height: 7px; border-radius: 50%; background: #00B9F2;"></span>
+              <p style="font-size: 15.5px; line-height: 1.62; color: #9fbccd; margin: 0;"><strong style="color: #EAF4FA; font-weight: 700;">Navigatie.</strong> Ze fungeren als bakens op de kale toendra om reizigers en jagers de juiste richting te wijzen.</p>
+            </div>
+            <div style="display: flex; gap: 13px; align-items: flex-start;">
+              <span style="flex: none; margin-top: 8px; width: 7px; height: 7px; border-radius: 50%; background: #00B9F2;"></span>
+              <p style="font-size: 15.5px; line-height: 1.62; color: #9fbccd; margin: 0;"><strong style="color: #EAF4FA; font-weight: 700;">Communicatie.</strong> Ze markeren visgronden, jachtgebieden of caches — plekken waar voedsel werd bewaard.</p>
+            </div>
+            <div style="display: flex; gap: 13px; align-items: flex-start;">
+              <span style="flex: none; margin-top: 8px; width: 7px; height: 7px; border-radius: 50%; background: #00B9F2;"></span>
+              <p style="font-size: 15.5px; line-height: 1.62; color: #9fbccd; margin: 0;"><strong style="color: #EAF4FA; font-weight: 700;">Symboliek.</strong> Ze staan symbool voor samenwerking, hoop en vriendschap, en zijn uitgegroeid tot een bekend cultureel icoon van Canada.</p>
+            </div>
+          </div>
+          <a href="https://thecanadianencyclopedia.ca/en/article/inuksuk-inukshuk" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px; font: 700 15px 'Manrope'; color: #4fd0ff;">Lees meer op The Canadian Encyclopedia <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIENSTEN ============ -->
+  <section id="diensten" style="padding: 88px 0;">
+    <div class="wrap">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; margin-bottom: 44px; flex-wrap: wrap;">
+        <div style="max-width: 560px;">
+          <div class="eyebrow" style="margin-bottom: 16px;">Diensten</div>
+          <h2 class="grotesk" style="font-weight: 700; font-size: 42px; line-height: 1.04; letter-spacing: -.025em; margin: 0;">Mijn expertise</h2>
+        </div>
+        <p style="font-size: 16.5px; line-height: 1.6; color: #6b8091; max-width: 340px; margin: 0;">Los of in combinatie — altijd praktisch en gericht op resultaat.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;">
+        <article class="svc" style="background: #fff; border: 1px solid #E1ECF2; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="background: #F4FBFE; border-bottom: 1px solid #E1ECF2; padding: 20px; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 260 120" style="width: 100%; max-width: 230px; height: auto;" fill="none" stroke="#0089C4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="18" y="20" width="46" height="54" rx="3"></rect>
+              <path d="M28 36 H54 M28 48 H54 M28 60 H46"></path>
+              <path d="M24 74 L16 108 M58 74 L66 108 M41 74 L41 108"></path>
+              <circle cx="104" cy="40" r="7"></circle>
+              <path d="M104 47 V72 M104 72 L96 100 M104 72 L112 100 M104 54 L86 34 M104 54 L114 64"></path>
+              <circle cx="170" cy="46" r="6"></circle>
+              <path d="M170 52 V72 M170 72 L164 98 M170 72 L176 98 M170 57 L163 66 M170 57 L177 66"></path>
+              <circle cx="202" cy="46" r="6"></circle>
+              <path d="M202 52 V72 M202 72 L196 98 M202 72 L208 98 M202 57 L195 66 M202 57 L209 66"></path>
+              <circle cx="234" cy="46" r="6"></circle>
+              <path d="M234 52 V72 M234 72 L228 98 M234 72 L240 98 M234 57 L227 66 M234 57 L241 66"></path>
+            </svg>
+          </div>
+          <div style="padding: 28px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+              <div style="width: 34px; height: 34px; border-radius: 9px; background: #E6F4FB; display: flex; align-items: center; justify-content: center; flex: none;"><span class="grotesk" style="font-weight: 700; font-size: 14px; color: #0089C4;">01</span></div>
+              <h3 class="grotesk" style="font-weight: 700; font-size: 22px; margin: 0; color: #0F2A3F;">Training</h3>
+            </div>
+            <p style="font-size: 15.5px; line-height: 1.6; color: #4a6478; margin: 0;">Interactieve trainingen gericht op gedrag dat je morgen al inzet — rond samenwerking, leiderschap en talentontwikkeling.</p>
+          </div>
+        </article>
+        <article class="svc" style="background: #fff; border: 1px solid #E1ECF2; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="background: #F4FBFE; border-bottom: 1px solid #E1ECF2; padding: 20px; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 260 120" style="width: 100%; max-width: 230px; height: auto;" fill="none" stroke="#0089C4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="130" cy="38" r="7"></circle>
+              <path d="M130 45 V70 M130 70 L122 98 M130 70 L138 98 M130 52 L120 62 M130 52 L140 62"></path>
+              <circle cx="40" cy="44" r="6"></circle>
+              <path d="M40 50 V74 M40 74 L34 98 M40 74 L46 98 M40 56 L33 65 M40 56 L47 65"></path>
+              <circle cx="215" cy="36" r="5"></circle>
+              <circle cx="198" cy="58" r="5"></circle>
+              <circle cx="232" cy="58" r="5"></circle>
+              <circle cx="215" cy="80" r="5"></circle>
+              <g stroke="#00B9F2">
+                <path d="M66 58 H104"></path>
+                <path d="M72 53 L66 58 L72 63 M98 53 L104 58 L98 63"></path>
+                <path d="M156 58 H184"></path>
+                <path d="M162 53 L156 58 L162 63 M178 53 L184 58 L178 63"></path>
+              </g>
+            </svg>
+          </div>
+          <div style="padding: 28px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+              <div style="width: 34px; height: 34px; border-radius: 9px; background: #E6F4FB; display: flex; align-items: center; justify-content: center; flex: none;"><span class="grotesk" style="font-weight: 700; font-size: 14px; color: #0089C4;">02</span></div>
+              <h3 class="grotesk" style="font-weight: 700; font-size: 22px; margin: 0; color: #0F2A3F;">Coaching</h3>
+            </div>
+            <p style="font-size: 15.5px; line-height: 1.6; color: #4a6478; margin: 0;">Individuele coaching én teamcoaching. Ik help je patronen te zien, keuzes te maken en een volgende stap te zetten.</p>
+          </div>
+        </article>
+        <article class="svc" style="background: #fff; border: 1px solid #E1ECF2; border-radius: 18px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="background: #F4FBFE; border-bottom: 1px solid #E1ECF2; padding: 20px; display: flex; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 260 120" style="width: 100%; max-width: 230px; height: auto;" fill="none" stroke="#0089C4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="80" cy="42" r="7"></circle>
+              <path d="M80 49 V74 M80 74 L72 100 M80 74 L88 100"></path>
+              <rect x="92" y="58" width="26" height="20" rx="2"></rect>
+              <path d="M80 55 L92 62 M80 58 L92 74"></path>
+              <rect x="160" y="86" width="64" height="12" rx="2"></rect>
+              <circle cx="190" cy="30" r="7"></circle>
+              <path d="M190 37 V60 M190 60 L183 86 M190 60 L197 86 M190 43 L181 52 M190 43 L199 52"></path>
+              <g stroke="#00B9F2">
+                <path d="M124 60 L158 47"></path>
+                <path d="M152 45 L158 47 L155 53"></path>
+              </g>
+            </svg>
+          </div>
+          <div style="padding: 28px;">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+              <div style="width: 34px; height: 34px; border-radius: 9px; background: #E6F4FB; display: flex; align-items: center; justify-content: center; flex: none;"><span class="grotesk" style="font-weight: 700; font-size: 14px; color: #0089C4;">03</span></div>
+              <h3 class="grotesk" style="font-weight: 700; font-size: 22px; margin: 0; color: #0F2A3F;">Advies</h3>
+            </div>
+            <p style="font-size: 15.5px; line-height: 1.6; color: #4a6478; margin: 0;">Advies bij organisatieontwikkeling en verandering. Van vraagstuk naar beweging, met oog voor mens én resultaat.</p>
+          </div>
+        </article>
+      </div>
+      <div style="margin-top: 22px; background: linear-gradient(100deg, #00B9F2, #0089C4); border-radius: 18px; padding: 30px 34px; display: flex; align-items: center; justify-content: space-between; gap: 26px; flex-wrap: wrap;">
+        <div style="max-width: 660px; color: #fff;">
+          <div class="grotesk" style="font-weight: 700; font-size: 20px; margin-bottom: 6px;">Ook actief bij De VerandermotOR</div>
+          <p style="font-size: 15.5px; line-height: 1.55; margin: 0; color: #E6F7FE;">Ik begeleid en adviseer ondernemingsraden rond medezeggenschap, organisatieverandering en strategische besluitvorming — zodat OR’s hun rol krachtig en met impact invullen.</p>
+        </div>
+        <a href="https://deverandermotor.nl" target="_blank" rel="noopener" style="white-space: nowrap; font: 700 15px 'Manrope'; background: #fff; color: #0089C4; padding: 13px 22px; border-radius: 10px;">deverandermotor.nl ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" style="padding: 84px 0;">
+    <div class="wrap">
+      <div style="background: #F4FBFE; border: 1px solid #DBEDF6; border-radius: 26px; padding: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 54px; align-items: center;">
+        <div>
+          <div class="eyebrow" style="margin-bottom: 18px;">Contact</div>
+          <h2 class="grotesk" style="font-weight: 700; font-size: 40px; line-height: 1.05; letter-spacing: -.025em; margin: 0 0 18px;">Voor een goed gesprek maak ik graag tijd.</h2>
+          <p style="font-size: 17px; line-height: 1.6; color: #3c5566; margin: 0;">Open voor samenwerkingen, advies-, coachings- en trainingsopdrachten en interim-opdrachten. Kan ik iets voor je betekenen?</p>
+        </div>
+        <div style="display: grid; gap: 12px;">
+          <a href="mailto:william.polm@wjpcoachingadvies.nl" class="svc" style="display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #E1ECF2; border-radius: 14px; padding: 18px 22px;">
+            <span><span style="display: block; font: 700 11px 'Space Grotesk'; letter-spacing: .12em; text-transform: uppercase; color: #8aa6ba; margin-bottom: 3px;">E-mail</span><span class="grotesk" style="font-weight: 600; font-size: 16px; color: #0F2A3F;">william.polm@wjpcoachingadvies.nl</span></span>
+            <span style="color: #00B9F2; font-size: 18px;">→</span>
+          </a>
+          <a href="tel:+31634722781" class="svc" style="display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #E1ECF2; border-radius: 14px; padding: 18px 22px;">
+            <span><span style="display: block; font: 700 11px 'Space Grotesk'; letter-spacing: .12em; text-transform: uppercase; color: #8aa6ba; margin-bottom: 3px;">Telefoon</span><span class="grotesk" style="font-weight: 600; font-size: 16px; color: #0F2A3F;">06 – 347 22 781</span></span>
+            <span style="color: #00B9F2; font-size: 18px;">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/william-polm-mmi-msc/" target="_blank" rel="noopener" class="svc" style="display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #E1ECF2; border-radius: 14px; padding: 18px 22px;">
+            <span><span style="display: block; font: 700 11px 'Space Grotesk'; letter-spacing: .12em; text-transform: uppercase; color: #8aa6ba; margin-bottom: 3px;">LinkedIn</span><span class="grotesk" style="font-weight: 600; font-size: 16px; color: #0F2A3F;">William Polm</span></span>
+            <span style="color: #00B9F2; font-size: 18px;">↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="border-top: 1px solid #E7EFF4; padding: 28px 0 40px;">
+    <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+      <img src="assets/logo-navy.png?v=5" alt="WJP" style="height: 26px;">
+      <div style="font: 600 13.5px 'Manrope'; color: #8aa6ba;">KVK 59978260 · <em style="font-style: italic;">van betekenis</em></div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+</body>
+</html>

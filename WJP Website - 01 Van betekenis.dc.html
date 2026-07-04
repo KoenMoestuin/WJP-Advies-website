@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #F6F1E9; color: #26221E; font-family: 'Instrument Sans', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: #B24E2C; color: #F6F1E9; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 40px; }
+  .eyebrow { font: 600 12px 'Instrument Sans'; letter-spacing: .2em; text-transform: uppercase; color: #B24E2C; }
+  .serif { font-family: 'Spectral', serif; }
+  .navlink { font: 500 15px 'Instrument Sans'; color: #5A5147; transition: color .2s; }
+  .navlink:hover { color: #26221E; }
+  .btn-primary { display: inline-flex; align-items: center; gap: 9px; font: 600 15px 'Instrument Sans'; background: #B24E2C; color: #F6F1E9; padding: 14px 26px; border-radius: 999px; transition: transform .2s, background .2s; }
+  .btn-primary:hover { transform: translateY(-2px); background: #9c4326; }
+  .btn-ghost { display: inline-flex; align-items: center; gap: 9px; font: 600 15px 'Instrument Sans'; color: #26221E; padding: 14px 24px; border-radius: 999px; border: 1.5px solid #D8C7B2; transition: border-color .2s, background .2s; }
+  .btn-ghost:hover { border-color: #26221E; background: #EFE6D8; }
+  .svc:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -28px rgba(38,34,30,.4); }
+  .svc { transition: transform .25s, box-shadow .25s; }
+  .taglist span { font: 500 14px 'Instrument Sans'; color: #7d7264; }
+</style>
+</helmet>
+
+<div>
+  <!-- ============ NAV ============ -->
+  <header style="position: sticky; top: 0; z-index: 50; background: rgba(246,241,233,.82); backdrop-filter: blur(10px); border-bottom: 1px solid #E7DBC9;">
+    <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; height: 76px;">
+      <a href="#top" style="display: flex; align-items: center; gap: 13px;">
+        <svg width="26" height="38" viewBox="0 0 92 128" style="color: #B24E2C; display: block;" aria-hidden="true">
+          <ellipse cx="46" cy="14" rx="12" ry="11" fill="currentColor"/>
+          <rect x="4" y="32" width="84" height="14" rx="7" fill="currentColor"/>
+          <rect x="27" y="52" width="38" height="30" rx="13" fill="currentColor"/>
+          <rect x="25" y="88" width="17" height="40" rx="8" fill="currentColor" transform="rotate(-4 33 108)"/>
+          <rect x="50" y="88" width="17" height="40" rx="8" fill="currentColor" transform="rotate(4 58 108)"/>
+        </svg>
+        <span style="display: flex; flex-direction: column; line-height: 1;">
+          <span class="serif" style="font-weight: 700; font-size: 22px; letter-spacing: .02em; color: #26221E;">WJP</span>
+          <span style="font: 500 9.5px 'Instrument Sans'; letter-spacing: .16em; text-transform: uppercase; color: #9c8f7e; margin-top: 3px;">van betekenis</span>
+        </span>
+      </a>
+      <nav style="display: flex; align-items: center; gap: 34px;">
+        <a class="navlink" href="#over">Over mij</a>
+        <a class="navlink" href="#unushuk">Unushuk</a>
+        <a class="navlink" href="#diensten">Diensten</a>
+        <a class="btn-primary" href="#contact" style="padding: 11px 22px; font-size: 14px;">Neem contact op</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" style="padding: 92px 0 88px;">
+    <div class="wrap" style="display: grid; grid-template-columns: 1.15fr .85fr; gap: 64px; align-items: center;">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 26px;">Training · Coaching · Advies</div>
+        <h1 class="serif" style="font-weight: 700; font-size: 78px; line-height: .98; letter-spacing: -.02em; margin: 0 0 26px;">Van<br>betekenis.</h1>
+        <p style="font-size: 20px; line-height: 1.6; color: #4a433a; max-width: 460px; margin: 0 0 36px;">Ik help mensen, teams en organisaties groeien, ontwikkelen en succesvol veranderen. Als adviseur, trainer en coach verbind ik mensen en creëer ik beweging — met oog voor mens én resultaat.</p>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a class="btn-primary" href="#contact">Neem contact op <span style="font-size: 17px;">→</span></a>
+          <a class="btn-ghost" href="https://www.linkedin.com/in/william-polm-mmi-msc/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div style="position: absolute; inset: -22px -22px auto auto; width: 150px; height: 150px; border-radius: 50%; background: #E9D9C4; z-index: 0;"></div>
+        <div style="position: relative; z-index: 1; border-radius: 200px 200px 24px 24px; overflow: hidden; border: 3px solid #B24E2C; aspect-ratio: 4/5; box-shadow: 0 30px 60px -34px rgba(38,34,30,.5);">
+          <img src="assets/portrait.png" alt="William Polm" style="width: 100%; height: 100%; object-fit: cover; filter: sepia(.14) contrast(1.03);">
+        </div>
+        <div style="position: absolute; z-index: 2; left: -26px; bottom: 26px; background: #F6F1E9; border: 1.5px solid #E1D4C1; border-radius: 16px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; box-shadow: 0 16px 34px -22px rgba(38,34,30,.45);">
+          <svg width="20" height="29" viewBox="0 0 92 128" style="color: #B24E2C; display: block;" aria-hidden="true">
+            <ellipse cx="46" cy="14" rx="12" ry="11" fill="currentColor"/><rect x="4" y="32" width="84" height="14" rx="7" fill="currentColor"/><rect x="27" y="52" width="38" height="30" rx="13" fill="currentColor"/><rect x="25" y="88" width="17" height="40" rx="8" fill="currentColor" transform="rotate(-4 33 108)"/><rect x="50" y="88" width="17" height="40" rx="8" fill="currentColor" transform="rotate(4 58 108)"/>
+          </svg>
+          <div style="line-height: 1.25;">
+            <div class="serif" style="font-weight: 600; font-size: 16px;">William Polm</div>
+            <div style="font: 500 12.5px 'Instrument Sans'; color: #8a7d6d;">Adviseur · Trainer · Coach</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OVER MIJ ============ -->
+  <section id="over" style="padding: 70px 0; border-top: 1px solid #E7DBC9;">
+    <div class="wrap" style="display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; align-items: start;">
+      <div style="position: sticky; top: 108px;">
+        <div class="eyebrow" style="margin-bottom: 18px;">Over mij</div>
+        <h2 class="serif" style="font-weight: 700; font-size: 40px; line-height: 1.08; letter-spacing: -.015em; margin: 0;">Mensen en<br>organisaties<br>verbinden.</h2>
+      </div>
+      <div style="font-size: 18px; line-height: 1.72; color: #4a433a;">
+        <p style="margin: 0 0 22px;">Door mijn ervaring binnen HR, coaching, accountmanagement en ondernemerschap weet ik mensen en organisaties met elkaar te verbinden en beweging te creëren. Ik ondersteun bij vraagstukken rond <em class="serif">samenwerking, leiderschap, talent­ontwikkeling en organisatie­ontwikkeling</em>.</p>
+        <p style="margin: 0 0 22px;">Daarnaast begeleid ik jonge professionals in hun ontwikkeling richting een carrière binnen People, Organisation &amp; Culture — waardoor ik nauw betrokken blijf bij de nieuwste ontwikkelingen binnen het vakgebied.</p>
+        <p style="margin: 0 0 30px;">Groei, ontwikkeling en resultaat vormen de rode draad in mijn werk. Na het afronden van mijn opleiding tot teamcoach ben ik ook inzetbaar voor teams die effectiever willen samenwerken of een volgende stap willen zetten.</p>
+        <div class="taglist" style="display: flex; flex-wrap: wrap; gap: 10px 22px; padding-top: 26px; border-top: 1px solid #E7DBC9;">
+          <span>Mensen</span><span>Gedrag</span><span>HR</span><span>Talent</span><span>Change</span><span>Ontwikkeling</span><span>Teams</span><span>Medezeggenschap</span><span>Groei</span><span>Ad Interim</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UNUSHUK ============ -->
+  <section id="unushuk" style="padding: 96px 0; background: #26221E; color: #F1E9DC;">
+    <div class="wrap" style="display: grid; grid-template-columns: .9fr 1.1fr; gap: 68px; align-items: center;">
+      <div style="display: flex; justify-content: center;">
+        <svg width="200" height="290" viewBox="0 0 92 128" aria-hidden="true">
+          <ellipse cx="46" cy="14" rx="12" ry="11" fill="#E3D3C0"/>
+          <rect x="4" y="32" width="84" height="14" rx="7" fill="#B24E2C"/>
+          <rect x="27" y="52" width="38" height="30" rx="13" fill="#E3D3C0"/>
+          <rect x="25" y="88" width="17" height="40" rx="8" fill="#B24E2C" transform="rotate(-4 33 108)"/>
+          <rect x="50" y="88" width="17" height="40" rx="8" fill="#B24E2C" transform="rotate(4 58 108)"/>
+        </svg>
+      </div>
+      <div>
+        <div class="eyebrow" style="color: #E0A07E; margin-bottom: 22px;">De Unushuk</div>
+        <h2 class="serif" style="font-weight: 600; font-size: 34px; line-height: 1.3; letter-spacing: -.01em; margin: 0 0 28px;">“De wegwijzer voor wie ná jou komt. Een stapeltje stenen dat ondersteunt, onderweg naar de bestemming.”</h2>
+        <p style="font-size: 17px; line-height: 1.75; color: #c6bbab; margin: 0 0 20px;">Ik kwam de Unushuk tegen tijdens een studiereis door Canada met studenten, in het kader van de ESTD — een internationale conferentie voor learning &amp; development voor professionals.</p>
+        <p style="font-size: 17px; line-height: 1.75; color: #c6bbab; margin: 0;">Het idee dat je van betekenis kunt zijn voor wie ná jou komt, raakte me. Dat past precies bij het gedachtegoed van HRM — en bij hoe ik naar mijn werk kijk.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIENSTEN ============ -->
+  <section id="diensten" style="padding: 92px 0;">
+    <div class="wrap">
+      <div style="max-width: 620px; margin: 0 0 52px;">
+        <div class="eyebrow" style="margin-bottom: 18px;">Diensten</div>
+        <h2 class="serif" style="font-weight: 700; font-size: 44px; line-height: 1.04; letter-spacing: -.02em; margin: 0 0 18px;">Drie manieren waarop ik van betekenis ben.</h2>
+        <p style="font-size: 18px; line-height: 1.6; color: #6a5f52; margin: 0;">Los of in combinatie — altijd praktisch, persoonlijk en gericht op beweging die beklijft.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+        <article class="svc" style="background: #FBF8F2; border: 1px solid #E7DBC9; border-radius: 20px; padding: 34px 30px;">
+          <div class="serif" style="font-size: 15px; color: #B24E2C; font-weight: 600;">01</div>
+          <h3 class="serif" style="font-weight: 600; font-size: 27px; margin: 14px 0 12px;">Training</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #5a5147; margin: 0;">Trainingen die blijven hangen. Interactief en gericht op gedrag dat je morgen al inzet — rond samenwerking, leiderschap en talentontwikkeling.</p>
+        </article>
+        <article class="svc" style="background: #FBF8F2; border: 1px solid #E7DBC9; border-radius: 20px; padding: 34px 30px;">
+          <div class="serif" style="font-size: 15px; color: #B24E2C; font-weight: 600;">02</div>
+          <h3 class="serif" style="font-weight: 600; font-size: 27px; margin: 14px 0 12px;">Coaching</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #5a5147; margin: 0;">Individuele coaching én teamcoaching. Ik help je — of je team — om patronen te zien, keuzes te maken en een volgende stap te zetten.</p>
+        </article>
+        <article class="svc" style="background: #FBF8F2; border: 1px solid #E7DBC9; border-radius: 20px; padding: 34px 30px;">
+          <div class="serif" style="font-size: 15px; color: #B24E2C; font-weight: 600;">03</div>
+          <h3 class="serif" style="font-weight: 600; font-size: 27px; margin: 14px 0 12px;">Advies</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #5a5147; margin: 0;">Advies bij organisatieontwikkeling en verandering. Van vraagstuk naar beweging, met oog voor de mens achter de organisatie.</p>
+        </article>
+      </div>
+
+      <div style="margin-top: 24px; background: #EFE6D8; border: 1px solid #E1D4C1; border-radius: 20px; padding: 30px 34px; display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap;">
+        <div style="max-width: 640px;">
+          <div class="serif" style="font-weight: 600; font-size: 21px; margin-bottom: 8px;">Ook actief bij De Verandermotor</div>
+          <p style="font-size: 16px; line-height: 1.6; color: #5a5147; margin: 0;">Vanuit De Verandermotor begeleid en adviseer ik ondernemingsraden rond medezeggenschap, organisatieverandering en strategische besluitvorming — zodat OR’s hun rol krachtig en met impact invullen.</p>
+        </div>
+        <a class="btn-ghost" href="https://deverandermotor.nl" target="_blank" rel="noopener" style="white-space: nowrap;">deverandermotor.nl ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" style="padding: 92px 0 40px; border-top: 1px solid #E7DBC9;">
+    <div class="wrap" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 20px;">Contact</div>
+        <h2 class="serif" style="font-weight: 700; font-size: 46px; line-height: 1.02; letter-spacing: -.02em; margin: 0 0 20px;">Voor een goed gesprek maak ik graag tijd.</h2>
+        <p style="font-size: 18px; line-height: 1.6; color: #6a5f52; margin: 0;">Ik sta open voor mooie samenwerkingen, advies-, coachings- en trainingsopdrachten en interim-opdrachten. Kan ik iets voor je betekenen? Neem gerust contact op.</p>
+      </div>
+      <div style="background: #FBF8F2; border: 1px solid #E7DBC9; border-radius: 24px; padding: 36px 38px;">
+        <a href="mailto:william.polm@wjpcoachingadvies.nl" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #ECE1D0;">
+          <span><span style="display: block; font: 500 12px 'Instrument Sans'; letter-spacing: .12em; text-transform: uppercase; color: #a2947f; margin-bottom: 4px;">E-mail</span><span class="serif" style="font-size: 18px;">william.polm@wjpcoachingadvies.nl</span></span>
+          <span style="color: #B24E2C; font-size: 18px;">→</span>
+        </a>
+        <a href="tel:+31634722781" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid #ECE1D0;">
+          <span><span style="display: block; font: 500 12px 'Instrument Sans'; letter-spacing: .12em; text-transform: uppercase; color: #a2947f; margin-bottom: 4px;">Telefoon</span><span class="serif" style="font-size: 18px;">06 – 347 22 781</span></span>
+          <span style="color: #B24E2C; font-size: 18px;">→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/william-polm-mmi-msc/" target="_blank" rel="noopener" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 0;">
+          <span><span style="display: block; font: 500 12px 'Instrument Sans'; letter-spacing: .12em; text-transform: uppercase; color: #a2947f; margin-bottom: 4px;">LinkedIn</span><span class="serif" style="font-size: 18px;">william-polm-mmi-msc</span></span>
+          <span style="color: #B24E2C; font-size: 18px;">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="border-top: 1px solid #E7DBC9; padding: 30px 0 44px;">
+    <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 11px;">
+        <svg width="18" height="26" viewBox="0 0 92 128" style="color: #B24E2C;" aria-hidden="true"><ellipse cx="46" cy="14" rx="12" ry="11" fill="currentColor"/><rect x="4" y="32" width="84" height="14" rx="7" fill="currentColor"/><rect x="27" y="52" width="38" height="30" rx="13" fill="currentColor"/><rect x="25" y="88" width="17" height="40" rx="8" fill="currentColor" transform="rotate(-4 33 108)"/><rect x="50" y="88" width="17" height="40" rx="8" fill="currentColor" transform="rotate(4 58 108)"/></svg>
+        <span class="serif" style="font-weight: 600; font-size: 15px;">WJP · training, coaching &amp; advies</span>
+      </div>
+      <div style="font: 500 13.5px 'Instrument Sans'; color: #9c8f7e;">KVK 59978260 · van betekenis</div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+</body>
+</html>
